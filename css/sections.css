@@ -608,3 +608,25 @@
   background: transparent;
 }
 .size-btn.active { background: var(--dark); color: var(--white); }
+
+@media (max-width: 768px) {
+  .grid-collections {
+    grid-template-columns: 1fr 1fr;
+  }
+  .col-card:first-child { grid-row: unset; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .philosophy { grid-template-columns: 1fr; gap: 40px; }
+  .featured { grid-template-columns: 1fr; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { min-height: 50vh; }
+  .hero-left { padding: 100px 28px 60px; }
+  .collections { padding: 60px 20px; }
+  .products-section { padding: 60px 20px; }
+  .testimonials { padding: 60px 20px; }
+  .test-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .philosophy { padding: 60px 28px; }
+  .featured { padding: 60px 28px; }
+  .newsletter { padding: 60px 28px; }
+  footer { padding: 60px 28px 28px; }
+}
