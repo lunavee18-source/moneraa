@@ -611,12 +611,23 @@ grid-template-rows: auto;
 
 @media (max-width: 768px) {
   .grid-collections {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 2px;
   }
-  .col-card:first-child { grid-row: unset; }
+  .col-card:first-child { grid-row: unset !important; }
+  .col-card-inner { 
+    aspect-ratio: 1 / 1 !important;
+    height: 180px !important;
+  }
+  .col-card:first-child .col-card-inner {
+    aspect-ratio: 1 / 1 !important;
+    height: 180px !important;
+    min-height: unset !important;
+  }
   .products-grid { grid-template-columns: 1fr 1fr; }
-  .philosophy { grid-template-columns: 1fr; gap: 40px; }
-  .featured { grid-template-columns: 1fr; }
+  .philosophy { grid-template-columns: 1fr; gap: 40px; padding: 60px 28px; }
+  .featured { grid-template-columns: 1fr; padding: 60px 28px; }
   .hero { grid-template-columns: 1fr; }
   .hero-right { min-height: 50vh; }
   .hero-left { padding: 100px 28px 60px; }
@@ -625,8 +636,6 @@ grid-template-rows: auto;
   .testimonials { padding: 60px 20px; }
   .test-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
-  .philosophy { padding: 60px 28px; }
-  .featured { padding: 60px 28px; }
   .newsletter { padding: 60px 28px; }
   footer { padding: 60px 28px 28px; }
 }
