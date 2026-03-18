@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MONÉRAA — By Monisha Shetty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Monéraa<span>By Monisha Shetty</span></a>
+    <ul class="nav-links">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <svg class="nav-icon" viewBox="0 0 24 24" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <svg class="nav-icon" viewBox="0 0 24 24" stroke-width="1.4"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <svg class="nav-icon" viewBox="0 0 24 24" stroke-width="1.4"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    </div>
+  </nav>
+
+  <!-- ═══════ HERO ═══════
+    ★ ADD HERO IMAGE:
+      Save file → images/hero/hero-bg.jpg
+      Best size: 900 × 1200px portrait
+  ══════════════════════ -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">New Collection 2025</div>
+      <h1 class="hero-title">Draped in<br /><em>Quiet</em><br />Luxury</h1>
+      <p class="hero-sub">Crafted for the woman who moves through the world with intention. Each piece is a study in restraint — where every seam speaks without speaking.</p>
+      <div class="hero-cta-row">
+        <a href="#products" class="btn-primary"><span>Shop Now</span></a>
+        <a href="#collections" class="btn-ghost">
+          Collections
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="images/hero/hero-bg.jpg" alt="Monéraa" class="hero-photo" onerror="this.style.display='none'" />
+      <div class="hero-img-wrap"><div class="fabric-layer"></div></div>
+      <div class="hero-brand-center">
+        <div class="hero-brand-name">Monéraa</div>
+        <div class="hero-brand-by">By Monisha Shetty</div>
+        <div class="hero-brand-divider"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ MARQUEE ═══════ -->
+  <div class="marquee-strip">
+    <div class="marquee-inner">
+      <span class="marquee-item">Handcrafted Excellence</span>
+      <span class="marquee-item">Sustainable Luxury</span>
+      <span class="marquee-item">Timeless Femininity</span>
+      <span class="marquee-item">Made to Order</span>
+      <span class="marquee-item">Premium Silks &amp; Linens</span>
+      <span class="marquee-item">Bengaluru — Est. 2024</span>
+      <span class="marquee-item">Handcrafted Excellence</span>
+      <span class="marquee-item">Sustainable Luxury</span>
+      <span class="marquee-item">Timeless Femininity</span>
+      <span class="marquee-item">Made to Order</span>
+      <span class="marquee-item">Premium Silks &amp; Linens</span>
+      <span class="marquee-item">Bengaluru — Est. 2024</span>
+    </div>
+  </div>
+
+  <!-- ═══════ COLLECTIONS ═══════
+    ★ ADD COLLECTION IMAGES:
+      images/collections/col-1.jpg  → Silk Reverie
+      images/collections/col-2.jpg  → Noir Séduction
+      images/collections/col-3.jpg  → Ivory & Linen
+      images/collections/col-4.jpg  → Terre Brûlée
+      Best size: 600 × 800px
+  ══════════════════════════════ -->
+  <section class="collections reveal" id="collections">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Our World</div>
+        <h2 class="section-title">The <em>Collections</em></h2>
+      </div>
+      <a href="#products" class="view-all">Shop All Pieces</a>
+    </div>
+    <div class="grid-collections">
+
+      <div class="col-card">
+        <div class="col-card-inner">
+          <img src="images/collections/col-1.jpg" alt="The Silk Reverie" class="col-img" onerror="this.style.display='none'" />
+          <div class="card-bg card-bg-1"></div>
+          <div class="card-shimmer"></div>
+          <div class="card-info">
+            <div class="card-cat">Signature Line</div>
+            <div class="card-name">The Silk Reverie</div>
+            <div class="card-pieces">24 Pieces</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-card">
+        <div class="col-card-inner">
+          <img src="images/collections/col-2.jpg" alt="Noir Séduction" class="col-img" onerror="this.style.display='none'" />
+          <div class="card-bg card-bg-2"></div>
+          <div class="card-shimmer"></div>
+          <div class="card-info">
+            <div class="card-cat">Evening</div>
+            <div class="card-name">Noir Séduction</div>
+            <div class="card-pieces">16 Pieces</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-card">
+        <div class="col-card-inner">
+          <img src="images/collections/col-3.jpg" alt="Ivory &amp; Linen" class="col-img" onerror="this.style.display='none'" />
+          <div class="card-bg card-bg-3"></div>
+          <div class="card-shimmer"></div>
+          <div class="card-info">
+            <div class="card-cat">Day Wear</div>
+            <div class="card-name">Ivory &amp; Linen</div>
+            <div class="card-pieces">20 Pieces</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-card">
+        <div class="col-card-inner">
+          <img src="images/collections/col-4.jpg" alt="Terre Brûlée" class="col-img" onerror="this.style.display='none'" />
+          <div class="card-bg card-bg-4"></div>
+          <div class="card-shimmer"></div>
+          <div class="card-info">
+            <div class="card-cat">Resort</div>
+            <div class="card-name">Terre Brûlée</div>
+            <div class="card-pieces">12 Pieces</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════ SHOP — ALL PRODUCTS ═══════
+    ★ ADD PRODUCT IMAGES:
+      images/products/p1.jpg  → Reverie Draped Gown
+      images/products/p2.jpg  → Noir Slip Dress
+      images/products/p3.jpg  → Ivory Linen Co-ord
+      images/products/p4.jpg  → Terracotta Maxi
+      images/products/p5.jpg  → Silk Bias Top
+      images/products/p6.jpg  → Drape Shoulder Blazer
+      images/products/p7.jpg  → Plissé Midi Skirt
+      images/products/p8.jpg  → Monéraa Kaftan
+      Best size: 500 × 700px portrait
+  ═════════════════════════════════════ -->
+  <section class="products-section reveal" id="products">
+    <div class="section-header">
+      <div>
+        <div class="section-label">Shop</div>
+        <h2 class="section-title">New <em>Arrivals</em></h2>
+      </div>
+      <a href="#" class="view-all">View All</a>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p1.jpg" alt="Reverie Draped Gown" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(160deg,#d4c4ae,#a08a68);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+          <span class="product-badge new">New</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Signature</div>
+          <div class="product-name">Reverie Draped Gown</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fdfaf6;" title="Ivory"></span>
+            <span class="color-dot" style="background:#e8b4b8;" title="Blush"></span>
+            <span class="color-dot" style="background:#1a1612;" title="Midnight"></span>
+          </div>
+          <div class="product-price">₹ 18,500</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p2.jpg" alt="Noir Slip Dress" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(140deg,#2e2a25,#1a1612);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+          <span class="product-badge bestseller">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Evening</div>
+          <div class="product-name">Noir Slip Dress</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#1a1612;" title="Black"></span>
+            <span class="color-dot" style="background:#4a3a2e;" title="Espresso"></span>
+          </div>
+          <div class="product-price">₹ 14,200</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p3.jpg" alt="Ivory Linen Co-ord Set" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(140deg,#e8dece,#c8b8a0);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Day Wear</div>
+          <div class="product-name">Ivory Linen Co-ord Set</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fdfaf6;" title="Ivory"></span>
+            <span class="color-dot" style="background:#d4c4ae;" title="Sand"></span>
+            <span class="color-dot" style="background:#c8a882;" title="Camel"></span>
+          </div>
+          <div class="product-price">₹ 11,800</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p4.jpg" alt="Terracotta Resort Maxi" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(140deg,#8a7a6a,#4a3a2e);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+          <span class="product-badge new">New</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Resort</div>
+          <div class="product-name">Terracotta Resort Maxi</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#b06040;" title="Terra"></span>
+            <span class="color-dot" style="background:#8a7a6a;" title="Taupe"></span>
+          </div>
+          <div class="product-price">₹ 16,500</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p5.jpg" alt="Silk Bias Cut Top" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(155deg,#c8b49a,#906848);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Separates</div>
+          <div class="product-name">Silk Bias Cut Top</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fdfaf6;" title="Ivory"></span>
+            <span class="color-dot" style="background:#e8b4b8;" title="Blush"></span>
+            <span class="color-dot" style="background:#c8a882;" title="Camel"></span>
+          </div>
+          <div class="product-price">₹ 7,400</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p6.jpg" alt="Drape Shoulder Blazer" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(140deg,#3e3830,#1a1612);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+          <span class="product-badge limited">Limited</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Outerwear</div>
+          <div class="product-name">Drape Shoulder Blazer</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#1a1612;" title="Noir"></span>
+            <span class="color-dot" style="background:#8a8278;" title="Smoke"></span>
+          </div>
+          <div class="product-price">₹ 22,000</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p7.jpg" alt="Plissé Midi Skirt" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(160deg,#ede5d8,#b8a888);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Separates</div>
+          <div class="product-name">Plissé Midi Skirt</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#fdfaf6;" title="Ivory"></span>
+            <span class="color-dot" style="background:#d4c4ae;" title="Parchment"></span>
+            <span class="color-dot" style="background:#b06040;" title="Rust"></span>
+          </div>
+          <div class="product-price">₹ 9,200</div>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-img-wrap">
+          <img src="images/products/p8.jpg" alt="The Monéraa Kaftan" class="product-img" onerror="this.style.display='none'" />
+          <div class="product-img-placeholder" style="background:linear-gradient(150deg,#d4b896,#b89a6a);"></div>
+          <div class="product-overlay"><a href="#" class="product-quick-btn">Quick Add</a></div>
+          <span class="product-badge bestseller">Bestseller</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Resort</div>
+          <div class="product-name">The Monéraa Kaftan</div>
+          <div class="product-colors">
+            <span class="color-dot" style="background:#d4b896;" title="Gold"></span>
+            <span class="color-dot" style="background:#fdfaf6;" title="White"></span>
+            <span class="color-dot" style="background:#1a1612;" title="Black"></span>
+          </div>
+          <div class="product-price">₹ 13,500</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════ PHILOSOPHY ═══════ -->
+  <section class="philosophy" id="about">
+    <div class="phil-left reveal">
+      <blockquote class="phil-quote">
+        "Luxury is not about price.<br />
+        It is about the <em>feeling</em> of being<br />
+        exactly yourself."
+      </blockquote>
+      <div class="phil-attr">Monisha Shetty, Founder</div>
+    </div>
+    <div class="phil-right reveal">
+      <div class="phil-stat">
+        <div class="phil-stat-num">100%</div>
+        <div class="phil-stat-label">Natural &amp; Sustainable Fabrics</div>
+      </div>
+      <div class="phil-stat">
+        <div class="phil-stat-num">Made to Order</div>
+        <div class="phil-stat-label">Every piece crafted for you, not inventory</div>
+      </div>
+      <div class="phil-stat">
+        <div class="phil-stat-num">Women — First</div>
+        <div class="phil-stat-label">Designed by a woman, for women, with love</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FEATURED PIECE ═══════
+    ★ ADD FEATURED IMAGE:
+      Save as: images/products/featured.jpg
+      Best size: 600 × 800px portrait
+  ══════════════════════════════════ -->
+  <section class="featured reveal" id="featured">
+    <div class="featured-visual">
+      <div class="feat-img-main">
+        <img src="images/products/featured.jpg" alt="Reverie Draped Gown" class="feat-photo" onerror="this.style.display='none'" />
+        <div class="feat-img-badge">New Arrival</div>
+      </div>
+    </div>
+    <div class="featured-text">
+      <div class="feat-eyebrow">Featured Piece</div>
+      <h2 class="feat-title">The <em>Reverie</em><br />Draped Gown</h2>
+      <p class="feat-desc">Handwoven silk charmeuse with a bias-cut silhouette that follows the body's natural geometry. Finished with hand-rolled edges and a signature Monéraa inner label. Available in Ivory, Blush, and Midnight.</p>
+      <div class="feat-price">₹ 18,500 <span>incl. custom fitting</span></div>
+      <div class="feat-size-row">
+        <span class="size-label">Size:</span>
+        <div class="size-options">
+          <span class="size-btn">XS</span>
+          <span class="size-btn active">S</span>
+          <span class="size-btn">M</span>
+          <span class="size-btn">L</span>
+          <span class="size-btn">XL</span>
+        </div>
+      </div>
+      <div class="feat-actions">
+        <a href="#" class="btn-gold">Add to Bag</a>
+        <a href="#" class="btn-outline-dark">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TESTIMONIALS ═══════ -->
+  <section class="testimonials" id="contact">
+    <div class="test-header reveal">
+      <div class="section-label centered">What They Say</div>
+      <h2 class="section-title">Worn with <em>Love</em></h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"The moment I wore it, I felt like I'd been waiting for this piece my whole life. Monéraa truly understands women."</p>
+        <div class="test-author">Priya R. — Mumbai</div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"Not one person at my wedding didn't ask about my outfit. The quality is unlike anything I've found in India."</p>
+        <div class="test-author">Sneha K. — Bengaluru</div>
+      </div>
+      <div class="test-card reveal">
+        <div class="test-stars">★★★★★</div>
+        <p class="test-quote">"Monisha personally ensured every detail was perfect. This is what luxury should feel like — personal, thoughtful, flawless."</p>
+        <div class="test-author">Aanya M. — Dubai</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ NEWSLETTER ═══════ -->
+  <section class="newsletter reveal">
+    <div class="section-label centered">Stay Close</div>
+    <h2 class="nl-title">Enter the <em>World</em><br />of Monéraa</h2>
+    <p class="nl-sub">Private previews, collection launches, and styling notes —<br />delivered only to those who truly appreciate the craft.</p>
+    <div class="nl-form">
+      <input type="email" class="nl-input" placeholder="Your email address" />
+      <button class="nl-btn">Join</button>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Monéraa</div>
+        <div class="footer-brand-sub">By Monisha Shetty</div>
+        <p class="footer-tagline">"Crafted with intention,<br />worn with grace."</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="#">The Silk Reverie</a></li>
+          <li><a href="#">Noir Séduction</a></li>
+          <li><a href="#">Ivory &amp; Linen</a></li>
+          <li><a href="#">Terre Brûlée</a></li>
+          <li><a href="#">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Craftsmanship</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Care Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">hello@moneraa.com</a></li>
+          <li><a href="#">+91 98765 43210</a></li>
+          <li><a href="#">Bengaluru, India</a></li>
+          <li><a href="#">Book Appointment</a></li>
+          <li><a href="#">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Monéraa by Monisha Shetty. All rights reserved.</div>
+      <div class="footer-socials">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/reveal.js"></script>
+</body>
+</html>

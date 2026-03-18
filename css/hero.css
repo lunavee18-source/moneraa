@@ -1,0 +1,213 @@
+/* ============================================
+   css/hero.css
+   Hero section + marquee
+   ============================================ */
+
+/* ── Hero shell ── */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Left panel ── */
+.hero-left {
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 60px 80px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  font-family: var(--sans);
+  font-size: 9.5px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  opacity: 0;
+  animation: fadeUp .9s .2s forwards;
+}
+.hero-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.hero-title {
+  font-family: var(--serif);
+  font-size: clamp(56px, 6.5vw, 88px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -.5px;
+  color: var(--dark);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeUp .9s .4s forwards;
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-sub {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--warm-grey);
+  max-width: 360px;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeUp .9s .6s forwards;
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  opacity: 0;
+  animation: fadeUp .9s .8s forwards;
+}
+
+/* ── Right panel — silk visual ── */
+.hero-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img-wrap {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 60% 40%,
+    #ede5d8 0%,
+    #d4c4ae 40%,
+    #b8a888 100%
+  );
+  opacity: 0;
+  animation: fadeIn 1.4s .3s forwards;
+}
+
+/* CSS silk fabric folds */
+.fabric-layer {
+  position: absolute;
+  inset: 0;
+}
+.fabric-layer::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,.35) 0%,
+    transparent 30%,
+    rgba(255,255,255,.15) 50%,
+    transparent 70%,
+    rgba(255,255,255,.2) 85%,
+    transparent 100%
+  );
+  border-radius: 50% 60% 40% 70%;
+  transform: rotate(-15deg);
+  animation: silkShift 8s ease-in-out infinite alternate;
+}
+.fabric-layer::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -20%;
+  width: 160%;
+  height: 160%;
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    rgba(255,255,255,.1) 25%,
+    transparent 40%,
+    rgba(255,255,255,.18) 60%,
+    transparent 80%
+  );
+  border-radius: 40% 60% 70% 30%;
+  animation: silkShift 6s ease-in-out infinite alternate-reverse;
+}
+
+/* Brand name overlaid on fabric */
+.hero-brand-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.hero-brand-name {
+  font-family: var(--serif);
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--dark);
+  opacity: 0;
+  animation: fadeIn 1.2s 1s forwards;
+}
+.hero-brand-by {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  margin-top: 8px;
+  opacity: 0;
+  animation: fadeIn 1.2s 1.3s forwards;
+}
+.hero-brand-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 12px auto 0;
+  opacity: 0;
+  animation: fadeIn 1.2s 1.5s forwards;
+}
+
+/* ── Marquee strip ── */
+.marquee-strip {
+  background: var(--dark);
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-inner {
+  display: inline-flex;
+  animation: marquee 22s linear infinite;
+}
+.marquee-item {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 3px;
+  color: var(--gold-light);
+  padding: 0 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+.marquee-item::after {
+  content: '✦';
+  font-size: 8px;
+  color: var(--gold);
+}

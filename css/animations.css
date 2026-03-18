@@ -1,0 +1,38 @@
+/* ============================================
+   css/animations.css
+   All keyframes + scroll reveal
+   ============================================ */
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes silkShift {
+  from { transform: rotate(-15deg) scale(1); }
+  to   { transform: rotate(-12deg) scale(1.04) translate(2%, -2%); }
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition:
+    opacity .9s var(--ease-luxury),
+    transform .9s var(--ease-luxury);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

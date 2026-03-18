@@ -1,0 +1,91 @@
+/* ============================================
+   css/nav.css
+   Navbar styles
+   ============================================ */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 52px;
+  background: transparent;
+  transition: background .5s, padding .4s, border-color .4s;
+}
+
+nav.scrolled {
+  background: rgba(245, 240, 232, .94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 14px 52px;
+  border-bottom: 1px solid rgba(184, 154, 106, .2);
+}
+
+/* ── Logo ── */
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dark);
+  cursor: none;
+}
+.nav-logo span {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 9px;
+  display: block;
+  letter-spacing: 2.5px;
+  color: var(--warm-grey);
+  margin-top: -1px;
+  text-transform: uppercase;
+}
+
+/* ── Links ── */
+.nav-links {
+  display: flex;
+  gap: 36px;
+}
+.nav-links a {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  position: relative;
+  padding-bottom: 2px;
+  cursor: none;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width .35s var(--ease-luxury);
+}
+.nav-links a:hover::after { width: 100%; }
+
+/* ── Icons ── */
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--charcoal);
+  fill: none;
+  cursor: none;
+  transition: stroke .2s;
+}
+.nav-icon:hover { stroke: var(--gold); }

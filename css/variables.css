@@ -1,0 +1,28 @@
+/* ============================================
+   css/variables.css
+   All design tokens for Monéraa
+   ============================================ */
+
+:root {
+  /* ── Colours ── */
+  --cream:        #f5f0e8;
+  --cream-deep:   #ede5d8;
+  --silk:         #e8dece;
+  --gold:         #b89a6a;
+  --gold-light:   #d4b896;
+  --dark:         #1a1612;
+  --charcoal:     #2e2a25;
+  --warm-grey:    #8a8278;
+  --white:        #fdfaf6;
+
+  /* ── Typography ── */
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'Jost', sans-serif;
+
+  /* ── Spacing ── */
+  --section-pad: 100px 80px;
+  --card-radius: 0px;
+
+  /* ── Transitions ── */
+  --ease-luxury: cubic-bezier(.23, 1, .32, 1);
+}
