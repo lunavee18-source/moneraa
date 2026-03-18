@@ -189,7 +189,7 @@ grid-template-rows: auto;
 
 .feat-img-main {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   background: linear-gradient(155deg, #c8b49a 0%, #b09878 30%, #906848 70%, #704828 100%);
   position: relative;
   overflow: hidden;
@@ -459,7 +459,7 @@ grid-template-rows: auto;
 
 .product-img-wrap {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   margin-bottom: 14px;
   background: var(--silk);
