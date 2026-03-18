@@ -77,4 +77,4 @@ Open `index.html` and search for `₹` — all 8 prices are right there to edit.
 
 ---
 
-© 2025 Monéraa by Monisha Shetty
+© 2026 Monéraa by Monisha Shetty
